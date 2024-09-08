@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .faq-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .faq-answer {
+            margin-top: 5px;
+            padding-left: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">World of Linux: This is a complete different project from World of Hackers</h1>
+    <p style="text-align: center;">This is a site that is not complete, these are both ran by the same staff team</p>
+    <p>World of Linux will not come until November 2024 as of our best estimates as we like to provide a 100% fact filled world! </p>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Linux vs GNU</div>
+            <div class="faq-answer">
+                <p>GNU is a project that provides free software components like compilers and utilities, while Linux is a kernel that manages hardware and system resources. Together, GNU software and the Linux kernel form a complete operating system, often referred to as "Linux." The term "GNU/Linux" more accurately describes this combination.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">What is Linux?</div>
+            <div class="faq-answer">
+                <p>Linux is an open-source operating system kernel that manages hardware and system resources.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">What's the best kernel?</div>
+            <div class="faq-answer">
+                <p>Ubuntu is known for its ease of use and broad community support, making it a solid choice for general users and developers. Linux Mint is praised for its user-friendly interface and stability, ideal for those transitioning from other operating systems. Pop!_OS offers a sleek design and enhanced performance features, especially for gamers and developers using advanced hardware.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">What are alternative apps for my Windows on Linux?</div>
+            <div class="faq-answer">
+                <p>There are many alternative applications available for Linux that can replace Windows apps. For example, LibreOffice can replace Microsoft Office, GIMP can replace Adobe Photoshop, and VLC Media Player is a versatile media player for various file formats.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            if (answerElement.style.display === "block") {
+                answerElement.style.display = "none";
+            } else {
+                answerElement.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+<div style="text-align: center;">
+  &copy; 2024
+</div>
